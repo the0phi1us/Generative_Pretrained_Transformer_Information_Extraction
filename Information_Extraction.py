@@ -8,7 +8,7 @@ def modify_text_with_gpt(text):
     MAX_RETRIES = 5
     RETRY_DELAY = 10
     prompt = (
-        "enter-your-prompt-here"
+        "your-prompt-here"
         f"{text}"
     ) 
 
@@ -32,11 +32,11 @@ def modify_text_with_gpt(text):
             print(f"Error encountered: {e}. Retrying in {RETRY_DELAY} seconds...")
             time.sleep(RETRY_DELAY)
             continue
-    return None  # If max retries exceeded, return None
+    return None
 
 input_excel_file_path = "your-input-excel-file-path-here"
-input_column_name = "Written PET/CT Report"
-output_column_name = "Ann Arbor Stage – As Determined by GPT-4 Based on PET/CT Report Text"
+input_column_name = "your-input-column-name-here"
+output_column_name = "your-output-column-name-here"
 output_excel_file_path = "your-output-excel-file-path-here"
 
 df = pd.read_excel(input_excel_file_path)
