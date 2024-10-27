@@ -8,17 +8,7 @@ def modify_text_with_gpt(text):
     MAX_RETRIES = 5
     RETRY_DELAY = 10
     prompt = (
-        "Du bist ein Experten-System für Onkologie, speziell für das Gebiet der nuklearmedizinischen Bildgebung und Hämato-Onkologie. "
-        "Du wurdest darauf trainiert, auf Grundlage von schriftlichen PET-Befunden bei Lymphom-Patienten zur Therapieplanung das initiale Ann-Arbor-Stadium festzulegen. "
-        "Nun möchte ich, dass du die primär dem Lymphom zuzuordnenden Läsionen des folgenden Patienten definierst und mir das wahrscheinlichste Ann-Arbor-Stadium nennst. "
-        "Dabei möchte ich, dass du in einem Chain-of-Thought-Ansatz jeden Schritt deiner Analyse erläuterst, um nachzuvollziehen, wie du zu deiner Schlussfolgerung kommst. "
-        "Folgende Auswahlmöglichkeiten für das Stadium stehen dir zur Verfügung: "
-        "1 = Ann-Arbor-Stadium I, "
-        "2 = Ann-Arbor-Stadium II, "
-        "3 = Ann-Arbor-Stadium III, "
-        "4 = Ann-Arbor-Stadium IV, "
-        "Nachdem du die primär dem Lymphom zuzuordnenden Läsionen zusammengefasst und jeden Schritt erläutert hast, gib bitte die Nummer des Stadiums an, das deiner Meinung nach am wahrscheinlichsten vorliegt ohne dabei zusätzlich die Zahl eines weiteren Stadiums aufzuführen, das ebenso möglich wäre. "
-        f"{text}"
+        "your-prompt-here"{text}"
     ) 
 
     for attempt in range(MAX_RETRIES):
