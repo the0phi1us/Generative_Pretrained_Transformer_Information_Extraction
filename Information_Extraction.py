@@ -8,7 +8,8 @@ def modify_text_with_gpt(text):
     MAX_RETRIES = 5
     RETRY_DELAY = 10
     prompt = (
-        "your-prompt-here"{text}"
+        "enter-your-prompt-here"
+        f"{text}"
     ) 
 
     for attempt in range(MAX_RETRIES):
